@@ -7,7 +7,7 @@
     <PackageReference Include="Google.Apis" Version="1.43.0" />
     <PackageReference Include="Google.Apis.Auth" Version="1.43.0" />
     <PackageReference Include="Google.Apis.Sheets.v4" Version="1.43.0.1856" />
-    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.1" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.3" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">

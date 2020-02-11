@@ -20,11 +20,11 @@ namespace EmailApp
         static string[] Scopes = { SheetsService.Scope.Spreadsheets };
 
         ///TODO: Replace with correct information///////////////////////////////////////////////////////////////////////////////////////////////////////////
-        static string ApplicationName = "Google Sheets Azure Function";
-        const string sheetId = "";
-        const string clientId = "000-blahblahblah.apps.googleusercontent.com";      // From https://console.developers.google.com  
-        const string clientSecret = "blah_BLahb74H"; 
-        static string range = "Class Data!A2:E";        
+        static string ApplicationName = Environment.GetEnvironmentVariable("ApplicationName").ToString();
+        static string sheetId = Environment.GetEnvironmentVariable("SheetId").ToString();
+        static string clientId = Environment.GetEnvironmentVariable("ClientId").ToString();         // From https://console.developers.google.com  
+        static string clientSecret = Environment.GetEnvironmentVariable("ClientSecret").ToString();
+        static string range = Environment.GetEnvironmentVariable("Range").ToString();               //"Class Data!A2:E";          
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         static UserCredential credential;
         #endregion
